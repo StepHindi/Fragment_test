@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements first.OnDataFragm
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new second());
+                MyDialog md = new MyDialog();
+                md.show(getSupportFragmentManager(), null);
             }
         });
 
